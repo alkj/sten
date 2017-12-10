@@ -5,22 +5,22 @@ public class sten {
 	public static void main(String[] args)
 	{
 
-		Scanner input = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 		System.out.print("Angiv højde: ");
 		//double h= input.nextDouble(); 
 		double h=0.0;
 
 		while(true) {
-			if(input.hasNextDouble()) {
-				h = input.nextDouble();
+			if(sc.hasNextDouble()) {
+				h = sc.nextDouble();
 				if(h <= 0)
 					System.out.print("ugyldigt input \nIndtast et tal. prøv igen: ");
 				else break;		
 			}
 			else {
 				System.out.print("ugyldigt input \nIndtast et tal. prøv igen: ");
-				input.next();				
+				sc.next();				
 			}	
 		}
 		double v;
@@ -37,7 +37,7 @@ public class sten {
 		System.out.println(Math.round(t*100.0)/100.0 + " s");
 
 
-		input.close();
+		sc.close();
 		//-----------------------------------------------------------------------//
 		//Programmet udregner hastigheden af en sten efter at den er accelereret 
 		//fra en given h�jde. 

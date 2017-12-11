@@ -5,24 +5,23 @@ public class sten {
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("velkommen til, vælg en af følgende 3 muligheder");
-		System.out.println("1 find farten ved et fald på jorden");
-		System.out.println("2 find farten ved et fald på månen\n");
-	
+
+		System.out.println("velkommen til, vï¿½lg en af fï¿½lgende 3 muligheder");
+		System.out.println("1 find farten ved et fald pï¿½ jorden");
+		System.out.println("2 find farten ved et fald pï¿½ mï¿½nen\n");
+
 		int i = sc.nextInt();
-		
+
 		if (i==1)
 			fartVedFald(sc);
 		if (i==2) 
-		farVedFaldMåne(sc);
+			farVedFaldMane(sc);
 		else
+			sc.close();
 
-		sc.close();
-		
 	}
 
-	private static void farVedFaldMåne(Scanner sc) {
+	private static void farVedFaldMane(Scanner sc) {
 		System.out.print("Angiv hÃ¸jde: ");
 		double h=0.0;
 
@@ -50,7 +49,7 @@ public class sten {
 		System.out.println("\t\t" + Math.round(v*3.6*100.0)/100.0 + " km/t");
 		System.out.print("Tiden i luften er ");
 		System.out.println(Math.round(t*100.0)/100.0 + " s");
-		
+
 	}
 
 	private static void fartVedFald(Scanner sc) {
@@ -87,11 +86,11 @@ public class sten {
 
 
 //-----------------------------------------------------------------------//
-		//Programmet udregner hastigheden af en sten efter at den er accelereret 
-		//fra en given hï¿½jde. 
-		//programmet er skrevet af Alexander Kjeldsen og Yoss Mellin.
-		//Dette er version 1.1
-		//15.09.2017
-		//der er nu lavet et loop, sï¿½ der ikke kommer en "error", nï¿½r man skriver
-		//et bogstav eller et negativt tal.
-		//----------------------------------------------------------------------//
+//Programmet udregner hastigheden af en sten efter at den er accelereret 
+//fra en given hï¿½jde. 
+//programmet er skrevet af Alexander Kjeldsen og Yoss Mellin.
+//Dette er version 1.1
+//15.09.2017
+//der er nu lavet et loop, sï¿½ der ikke kommer en "error", nï¿½r man skriver
+//et bogstav eller et negativt tal.
+//----------------------------------------------------------------------//

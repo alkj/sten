@@ -21,19 +21,14 @@ public class sten {
 		if (i==1)
 			fartVedFald(sc);
 		if (i==2) 
-			farVedFaldMÂne(sc);
+			fartVedFaldMane(sc);
 		if (i==3)
 			fartVedFaldjupiter(sc);
 
-		else
-
 			sc.close();
-
 	}
 
-
-
-	private void farVedFaldMÂne(Scanner sc) {
+	private static void fartVedFaldMane(Scanner sc) {
 		System.out.print("Angiv h√∏jde: ");
 		double h=0.0;
 
